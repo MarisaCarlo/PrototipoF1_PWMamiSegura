@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas y Apoyo Psicosocial - MamiSegura</title>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="bg-primary text-white py-3" role="banner">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="h3 mb-0" aria-label="MamiSegura, tu apoyo integral">MamiSegura</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark p-0" aria-label="Menú principal de navegación">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="salud.html">Salud y Educación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nutricion.html">Nutrición</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="apoyo.html">Consultas y Apoyo</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container my-5" role="main">
+        <h2 class="text-center mb-5 display-5 fw-bold text-primary">Consultas Virtuales y Nuestra Comunidad de Apoyo</h2>
+        <p class="lead text-center mb-5">Conéctate con profesionales de la salud y con otras madres que te entienden.</p>
+
+        <section id="consultas" class="mb-5 pb-4 border-bottom">
+            <h3 class="mb-4 display-6">Consultas Virtuales: Tu salud en tus manos</h3>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="mb-4">Envía tus preguntas a nuestros **profesionales de la salud** (médicos, enfermeras, nutricionistas) y recibe orientación directa. Nuestro servicio está diseñado para ser **confidencial, accesible y responder tus dudas no urgentes** de forma eficiente.</p>
+
+                    <h4>¿Cómo funciona?</h4>
+                    <ol class="list-group list-group-numbered mb-4">
+                        <li class="list-group-item">Rellena el formulario de contacto con tu nombre, correo electrónico y tu consulta detallada.</li>
+                        <li class="list-group-item">Un profesional de MamiSegura revisará tu pregunta.</li>
+                        <li class="list-group-item">Recibirás una respuesta personalizada en tu correo electrónico en un plazo de **24 a 48 horas**.</li>
+                        <li class="list-group-item">Tus consultas son completamente **confidenciales**.</li>
+                    </ol>
+
+                    <div class="alert alert-warning" role="alert" aria-live="polite">
+                        <h4 class="alert-heading"><i class="bi bi-exclamation-triangle-fill me-2" aria-hidden="true"></i>Aviso Importante:</h4>
+                        <p class="mb-0">MamiSegura **NO sustituye la atención médica presencial** ni debe usarse en caso de **emergencias**. Ante cualquier situación de riesgo o urgencia, busca ayuda médica de inmediato en tu centro de salud más cercano.</p>
+                    </div>
+
+                    <h4 class="mt-5 mb-3">Envía tu Consulta Aquí:</h4>
+                    <div class="card shadow-sm p-4">
+                        <form action="#" method="POST" aria-label="Formulario para enviar una consulta virtual">
+                            <div class="mb-3">
+                                <label for="nombreConsulta" class="form-label fw-bold">Nombre Completo <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="nombreConsulta" name="nombre" required aria-required="true" placeholder="Tu nombre y apellido" aria-label="Introduce tu nombre completo">
+                                <div class="invalid-feedback">
+                                    Por favor, introduce tu nombre.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="emailConsulta" class="form-label fw-bold">Correo Electrónico <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="emailConsulta" name="email" required aria-required="true" placeholder="ejemplo@correo.com" aria-label="Introduce tu correo electrónico">
+                                <div class="invalid-feedback">
+                                    Por favor, introduce un correo electrónico válido.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensajeConsulta" class="form-label fw-bold">Tu Mensaje o Consulta <span class="text-danger">*</span></label>
+                                <textarea class="form-control" id="mensajeConsulta" name="mensaje" rows="7" required aria-required="true" placeholder="Describe tu pregunta o situación detalladamente" aria-label="Escribe tu mensaje o consulta"></textarea>
+                                <div class="invalid-feedback">
+                                    Por favor, escribe tu mensaje.
+                                </div>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-primary btn-lg" aria-label="Enviar formulario de consulta">Enviar Consulta <i class="bi bi-send-fill ms-2" aria-hidden="true"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="comunidad" class="mb-5">
+            <h3 class="mb-4 display-6">Nuestra Comunidad de Apoyo: No estás sola</h3>
+            <p class="mb-4 text-center">La maternidad es un viaje lleno de alegrías y desafíos. Únete a nuestra comunidad para encontrar **apoyo emocional, compartir tus experiencias** y aprender de otras madres que te entienden y te acompañan.</p>
+
+            <h4 class="mt-5 mb-3">Únete a Nuestros Foros de Discusión:</h4>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4 d-flex">
+                    <div class="card h-100 shadow-sm border-0" aria-label="Tarjeta de foro Desafíos y Alegrías de la Maternidad">
+                        <div class="card-body text-center">
+                            <i class="bi bi-chat-heart-fill fs-2 text-primary mb-3" aria-hidden="true"></i>
+                            <h5 class="card-title fw-bold">Desafíos y Alegrías de la Maternidad</h5>
+                            <p class="card-text">Un espacio seguro para hablar sobre los retos diarios, compartir consejos y celebrar los momentos felices de ser mamá.</p>
+                            <a href="#" class="btn btn-outline-primary mt-auto" aria-label="Ir al foro Desafíos y Alegrías de la Maternidad">Ir al Foro <i class="bi bi-box-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex">
+                    <div class="card h-100 shadow-sm border-0" aria-label="Tarjeta de foro Desarrollo de Niños Pequeños">
+                        <div class="card-body text-center">
+                            <i class="bi bi-child-fill fs-2 text-primary mb-3" aria-hidden="true"></i>
+                            <h5 class="card-title fw-bold">Desarrollo de Niños Pequeños (0-5 años)</h5>
+                            <p class="card-text">Preguntas y consejos sobre el crecimiento, aprendizaje, hitos y etapas de desarrollo de tus hijos. ¡Aprendamos juntas!</p>
+                            <a href="#" class="btn btn-outline-primary mt-auto" aria-label="Ir al foro Desarrollo de Niños Pequeños">Ir al Foro <i class="bi bi-box-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex">
+                    <div class="card h-100 shadow-sm border-0" aria-label="Tarjeta de foro Bienestar Emocional de la Madre">
+                        <div class="card-body text-center">
+                            <i class="bi bi-emoji-heart-eyes-fill fs-2 text-primary mb-3" aria-hidden="true"></i>
+                            <h5 class="card-title fw-bold">Bienestar Emocional de la Madre</h5>
+                            <p class="card-text">Prioriza tu salud mental. Comparte cómo te sientes y encuentra estrategias para cuidar tu bienestar emocional durante la maternidad.</p>
+                            <a href="#" class="btn btn-outline-primary mt-auto" aria-label="Ir al foro Bienestar Emocional de la Madre">Ir al Foro <i class="bi bi-box-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="mt-5 mb-3">Reglas de Nuestra Comunidad:</h4>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item d-flex align-items-center"><i class="bi bi-check-circle-fill text-success me-3" aria-hidden="true"></i>Sé respetuosa y empática con todas las usuarias.</li>
+                <li class="list-group-item d-flex align-items-center"><i class="bi bi-check-circle-fill text-success me-3" aria-hidden="true"></i>Mantiene la confidencialidad de la información personal de otros.</li>
+                <li class="list-group-item d-flex align-items-center"><i class="bi bi-check-circle-fill text-success me-3" aria-hidden="true"></i>No sustituyas el consejo médico profesional por opiniones personales.</li>
+                <li class="list-group-item d-flex align-items-center"><i class="bi bi-check-circle-fill text-success me-3" aria-hidden="true"></i>Fomenta un ambiente positivo y de apoyo mutuo.</li>
+            </ul>
+
+            <h4 class="mt-5 mb-3">Recursos Adicionales de Apoyo Psicosocial:</h4>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action d-flex align-items-center" aria-label="Enlace a Línea de Ayuda Nacional de Salud Mental">
+                    <i class="bi bi-telephone-fill me-3 text-primary" aria-hidden="true"></i>
+                    Línea de Ayuda Nacional de Salud Mental (Ejemplo) <span class="badge bg-primary ms-auto">24/7</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action d-flex align-items-center" aria-label="Enlace a Fundación de Apoyo a la Maternidad Local">
+                    <i class="bi bi-globe me-3 text-primary" aria-hidden="true"></i>
+                    Fundación de Apoyo a la Maternidad Local (Ejemplo de organización)
+                </a>
+                <a href="#" class="list-group-item list-group-item-action d-flex align-items-center" aria-label="Enlace a Guía para la Depresión Postparto">
+                    <i class="bi bi-file-earmark-text-fill me-3 text-primary" aria-hidden="true"></i>
+                    Guía para la Depresión Postparto (Recurso informativo)
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4" role="contentinfo">
+        <div class="container text-center">
+            <p>© 2025 MamiSegura. Todos los derechos reservados.</p>
+            <p class="mb-0">Diseñado con <span aria-label="amor" role="img">❤️</span> para las madres de zonas vulnerables.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

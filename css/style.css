@@ -1,0 +1,288 @@
+/* Custom CSS for MamiSegura */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+    --primary-color: #6a1b9a; /* Un morado cálido y profesional */
+    --secondary-color: #fce4ec; /* Rosa muy claro para acentos suaves */
+    --accent-color: #ffee58; /* Amarillo vibrante para destacar elementos */
+    --text-color: #333;
+    --light-bg: #f8f9fa; /* Fondo general claro */
+    --white: #fff;
+    --dark-bg: #212529; /* Fondo oscuro para el footer */
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; /* Tipografía legible para el cuerpo del texto */
+    color: var(--text-color);
+    background-color: var(--light-bg);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif; /* Otra opción de sans-serif para títulos, más impactante */
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white);
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #7b29a8; /* Un tono un poco más oscuro para el hover */
+    border-color: #7b29a8;
+    transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.75);
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--white);
+    font-weight: 600;
+}
+
+/* Carrusel de Imágenes (Hero Section) */
+#heroCarousel .carousel-item img {
+    height: 550px; /* Altura fija para el carrusel en pantallas grandes */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+    filter: brightness(0.6); /* Oscurece ligeramente las imágenes para que el texto sea legible */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo semi-transparente para el texto */
+    border-radius: 8px;
+    padding: 1.5rem;
+    position: absolute;
+    bottom: 20%; /* Ajusta la posición vertical del caption */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Ancho del caption */
+    max-width: 700px;
+}
+
+.carousel-caption h2 {
+    color: var(--white);
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.carousel-caption p {
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+
+/* Tarjetas (Cards) */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden; /* Asegura que los bordes redondeados se apliquen a las imágenes también */
+}
+
+.card:hover {
+    transform: translateY(-8px); /* Elevación sutil al pasar el mouse */
+    box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-img-top {
+    height: 200px; /* Altura fija para las imágenes de las tarjetas */
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Para que el botón quede abajo */
+}
+
+/* Formularios */
+.form-label {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(106, 27, 154, 0.25);
+}
+
+/* Acordeón (para Mitos y Verdades) */
+.accordion-item {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.accordion-button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 1rem 1.25rem;
+    border-radius: 8px !important; /* Para que los bordes del botón se redondeen */
+    transition: background-color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.accordion-body {
+    padding: 1.25rem;
+    background-color: var(--white);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+
+/* Listas de grupo personalizadas */
+.list-group-item {
+    border-color: rgba(0,0,0,.08);
+}
+
+.list-group-item i {
+    font-size: 1.2rem;
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--dark-bg) !important;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+/* Contraste de color para textos sobre fondos primarios/oscuros */
+.bg-primary, .bg-dark {
+    color: var(--white); /* Asegura que el texto sea blanco sobre estos fondos */
+}
+
+/* ---------------------------------- */
+/* Media Queries para Diseño Responsivo */
+/* ---------------------------------- */
+
+/* Dispositivos muy pequeños (telefonos, 0px a 575px) */
+@media (max-width: 575.98px) {
+    #heroCarousel .carousel-item img {
+        height: 350px; /* Menor altura en móviles */
+    }
+
+    .carousel-caption {
+        padding: 0.8rem;
+        bottom: 5%; /* Más abajo en móviles */
+        width: 90%;
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+    }
+
+    .list-group-item i {
+        font-size: 1rem;
+    }
+}
+
+/* Pequeños dispositivos (tabletas en modo retrato, 576px a 767px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #heroCarousel .carousel-item img {
+        height: 450px;
+    }
+    .carousel-caption h2 {
+        font-size: 2.2rem;
+    }
+    .carousel-caption p {
+        font-size: 1.1rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Medianos dispositivos (tabletas en modo paisaje, 768px a 991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #heroCarousel .carousel-item img {
+        height: 500px;
+    }
+    .carousel-caption h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Grandes dispositivos (desktops, 992px en adelante) */
+@media (min-width: 992px) {
+    /* Los estilos por defecto ya están optimizados para grandes pantallas */
+}
